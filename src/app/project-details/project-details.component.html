@@ -1,0 +1,31 @@
+
+<div class="container">
+  <br>
+  <h4>Stats For : {{repo}} , Commiters and Contributions</h4>
+  Total Commiters : {{commiters.length}} <br>
+  Total Commits : {{commits}} <br>
+  Total Events : {{events.length}} <br>
+  <hr>
+  <br>
+
+
+  <div class="row text-center text-lg-left">
+
+
+    <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let com of commiters; let i=index">
+      <div>
+        <p> Commiter : <span>{{com.login}}</span></p> <br>
+        <p> Number Of Commits : <span>{{com.contributions}}</span></p> <br>
+        <p> Impact On Project : <span>{{impacts[i]}} %</span></p> <br>
+        <hr>
+      </div>
+    </div>
+
+
+
+    <br> <br>
+  </div>
+</div>
+
+
+
